@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, width=device-width">
+    <title>Cat Questionaire</title>
+    <link rel="stylesheet" href="styles1.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <h1 id="title">Cat Questionaire</h1>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <button
+              class="navbar-toggler"
+              type="button"
+              data-mdb-toggle="collapse"
+              data-mdb-target="#navbarCenteredExample"
+              aria-controls="navbarCenteredExample"
+              aria-expanded="false"
+              aria-label="Toggle navigation">
+              <i class="fas fa-bars"></i>
+          </button>
+            <div
+                class="collapse navbar-collapse justify-content-center"
+                id="navbarCenteredExample">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="form.html">Cat form</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="test.html">Experimental</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="source.html">References Source</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+      </nav>
+    <p id="description">Survey regarding cats</p>
+    <form id="survey-form">
+      <fieldset class="personal">
+        <legend>Personal Information</legend>
+        <div class="names">
+          <label for="firstName" class="form-label">Name</label>
+          <input id="firstName" type="text" class="form-control" placeholder="Jelly" autofocus="" required="">
+        </div>
+        <div class="emails">
+          <label for="Email" class="form-label">Email address</label>
+          <input id="Email" type="text" class="form-control" placeholder="jelly@cat.com" style="border-radius: .25rem;" required="">
+        </div>
+      </fieldset>
+      <fieldset>
+        <label>Are you a cat or A dog Person: </label>
+          <select id="dropdown">
+            <option> A cat </option>
+            <option> Only cat </option>
+            <option> Definitely the cat </option>
+            <option> Cat better </option>
+          </select>
+      </fieldset>
+      <fieldset class="random">
+        <label>What type of cat are you: </label>
+        <br>
+        <input type="radio" name="cat" value="super"> Supercat
+        <br>
+        <input type="radio" name="cat" value="majestic"> Majestic cat
+        <br>
+        <input type="radio" name="cat" value="cuddly"> Cuddly cat
+        <br>
+        <label>Check The box to verify a cat person: </label>
+        <br>
+        <input type="checkbox" value="cat" required> Cat
+        <br>
+        <input type="checkbox" value="cat" required> Cat
+        <br>
+        <input type="checkbox" value="cat" required> Cat
+      </fieldset>
+      <fieldset>
+        <textarea class="text" placeholder="What do you think about this survey?" rows="3" cols="45"></textarea>
+        <br>
+        <input type="submit" value="Submit" id="submit">
+      </fieldset>
+    </form>
+    <div class="footer">
+      My head spinning reading all the documentation and <a href="https://youtu.be/xvFZjo5PgG0"><img src="cat.png" class="icon" alt=""></a>
+    </div>
+  </body>
+</html>
